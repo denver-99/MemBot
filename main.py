@@ -27,7 +27,7 @@ def start(message):
         bot.send_photo(message.from_user.id, photo, caption='Получите')
 
     elif message.text.lower() == 'выйти':
-        bot.send_message(message.from_user.id, 'Клавиатура убрана!!.', reply_markup=types.ReplyKeyboardRemove())
+        bot.send_message(message.from_user.id, 'Клавиатура убрана!!!.', reply_markup=types.ReplyKeyboardRemove())
 
 
 bot.polling(none_stop=True, interval=0)
